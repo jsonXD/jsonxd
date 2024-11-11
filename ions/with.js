@@ -5,9 +5,9 @@
     , re:  'with.re@ionify'
     , of: ['core', 'public', 'sion', 'context', 'api']
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee', 'team✨ionify']
-    , on: {200709.2    : -4}
-    , to: {578311222.1 : -8}
-    , at: -0.017
+    , on: {                    200709.8330 : -4 }
+    , to: {578408013.3081110 : 202411053.3088330}
+    , at: -0.018
   //, do: {copy:-0.001, recursion:-0.001}
     , as: {connection:-0.001, convention:-0.001, sensation:-0.001}
     , is:
@@ -320,9 +320,10 @@
   members (ion)
     { if (!ion) return
 
-      var has       , vith
-        , partial   , member
+      var has       , partial
+        , vith      , member
         , via       = members.with
+        , known     = via.our.known
         , me        = via.my
         , WITH      = me.WITH
         , recursion = me.augment.recursion
@@ -333,6 +334,14 @@
         ( var name in ion)                        //👨🏾‍🏫 inspecting each member
         { if( name == 'with')                     continue  //👨🏾‍🏫 except .with
           if(!ion.hasOwnProperty (name))          continue  //👨🏾‍🏫 & inherited.
+
+          if( known)
+          for //skip augmenting ion's member if it's a term in known operation(s)
+            ( var term  = known [name]
+            ,     group =-1
+            ;  ++ group < (term ? term.length : 0);
+            )
+          if( term.as && term.as.operation && term.in(ion)) continue
 
           member = ion [name]                               //👨🏾‍💻 affirm member
 
@@ -433,6 +442,33 @@
                     vith.in [domain]  =
                     vith.the[domain]  =   groups [domain]
                                       || (groups [domain] = our || {});
+/*
+if(re && re.id && re.id.name==='anemojii.emoji@ions.iskitz.net')
+vith.our.emoji = ion == vith.its ? ion : vith.its
+if(re && re.id && re.id.name==='anemojii.face@ions.iskitz.net')
+vith.our.face = ion == vith.its ? ion : vith.its
+/*
+var id = vith.our
+  , name = re && re.id && re.id.name
+/*///; name && (name = name.replace(/(.*)@.*/,"$1"))
+/** /; name && (name = name.replace(/\-/g,"__"))
+/** /; name && (name = name.replace(/\./g,"_"))
+/** /; name && (id[name] = ion == vith.its ? ion : vith.its)
+//; name =   name ? name.split('.') : []
+//console.log(`name: ${name}`)
+//!name && alert('anonymous')
+/*
+for
+  ( var n=-1
+  ;   ++n < name.length
+  ; id = id[name[n]]
+  )
+  { if(n == name.length - 1)
+      id[name[n]] = ion == vith.its ? ion : vith.its
+    else
+     {id[name[n]] || (id[name[n]] = {})}
+  }
+//*/
 
       i.combine (which) //🤲🏾 with@ is formed! 🎉
     },

@@ -3,12 +3,12 @@
 { re:
     { id:  'narrator@ions.iskitz.net'
     , of: ['more','ionify','public','api','tools']
-    , as: {sensation    :true}
+    , as: {application:-0.001, operation:-0.001, sensation    :true}
     , do: {transcription:true}
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
-    , on: -4.200709
-    , to: -8.20221125
-    , at: -0.008
+    , on:  200709.3048330
+    , to: {578408013.3081110 : 202411053.3088330}
+    , at: -0.009
     , is:
         [ "observes & presents live code narration via these apis:    "
         + "  ~I: do narration once; only the 1st time per ~I instance."

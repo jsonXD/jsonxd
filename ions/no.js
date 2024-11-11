@@ -4,10 +4,10 @@
     { id:  'no@ionify'
     , of: ['core','public','api']
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
-    , as: {sensation:-0.001, composition:-0.001, specification:-0.001}
-    , on:  -2.20070904
-    , to:  -1.58731001108
-    , at:  -0.053
+    , as: {operation:-0.001, sensation:-0.001, composition:-0.001, specification:-0.001}
+    , on:                      200709.3048330
+    , to: {578408013.3081110 : 202411053.3088330}
+    , at: -0.054
     , is:
         [ "ionify's public ~on.no action"
         , "disabling all reactions to the specified sensation"

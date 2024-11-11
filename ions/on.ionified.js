@@ -3,11 +3,11 @@
 { re:
   { id:  'on.ionified@ionify'
   , of: ['public','tools','api']
-  , as: {sensation:-0.001}
+  , as: {operation:-0.001, sensation:-0.001}
   , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
-  , on:  -24.200709
-  , to:  -18.578309156
-  , at:  - 0.003
+  , on:                      200709.3048330
+  , to: {578408013.3081110 : 202411053.3088330}
+  , at: -0.004
   , is:
       [ "the +{ionified: thing} sensor"
       , "confirming if the type of the thing is ionify sensible"

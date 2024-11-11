@@ -2,16 +2,16 @@
 ~
 { re:
     { id:  'use@ionify'
-    , of:  ['core','public','api']
-    , as:  {sensation:-0.001, composition:-0.001}
+    , of: ['core','public','api']
+    , as: {operation:-0.001, sensation:-0.001, composition:-0.001}
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike👨🏾‍💻lee@ionify.net', 'team✨ionify']
-    , on:  -4.200709
-    , to:  -8.20221117
-    , at:  -0.010
+    , on:                      200709.3048330
+    , to: {578408013.3081110 : 202411053.3088330}
+    , at: -0.011
     , is: "enabling the use of an ion's thing(s)"
     , go:
         { seek: 'https://api.ionify.net/'
-        , read: 'https://lingo.ionify.net/'
+        , know: 'https://know.ionify.net/'
         , deal: 'https://deal.ionify.net/'
         , help: 'https://github.com/ionify/ionify/issues'
       //, test: 'https://github.com/ionify/ionify/blob/public/ions/use.test.js'

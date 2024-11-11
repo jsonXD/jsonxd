@@ -6,10 +6,11 @@
     , of: ['public', 'transcription', 'tools', 'api']
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
     , on: {200709.2    : -4}
-    , to: {578311196.1 : -8}
-    , at: -0.055
+    , to: {578408013.3081110 : 202411053.3088330}
+    , at: -0.056
     , do: {malfunction:true}
-    , as: {sensation:-0.001}
+    , as: {application:-0.001, operation:-0.001, sensation:-0.001}
+    , an: 'log'
     , in:
         [    'queens-county.new-york.us.earth'
         , 'silicon-valley.california.us.earth'

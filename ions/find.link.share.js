@@ -4,11 +4,11 @@
     { id:  'find.link.share@ionify'
     , of: ['core', 'context', 'tools', 'api']
     , do: {transcription:-0.001}
-    , as: {convention   :-0.001}
+    , as: {    operation:-0.001}
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
-    , on: { 200709.2    : -4      }
-    , to: { 578311211.1 : -8.2108 }
-    , at:  -0.067
+    , on: { 200709.8330    : -4      }
+    , to: { 578408013.1110 : -8.0119 }
+    , at:  -0.068
     , is:
         [
         [ "implementing ionify's ~find.for.as.in.skip name-to-ai-resolution"
@@ -22,7 +22,7 @@
       go:
         { meet: 'https://meet.ionify.net/'
         , seek: 'https://seek.ionify.net/'
-        , read: 'https://read.ionify.net/'
+        , know: 'https://know.ionify.net/'
         , deal: 'https://deal.ionify.net/'
         , help: 'https://help.ionify.net/'
         , test:

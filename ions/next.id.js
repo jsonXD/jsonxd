@@ -3,11 +3,11 @@
 { re:
     { id:  'next.id@ionify'
     , of: ['public','tools','api']
-    , as: {sion:-0.001, sensation:0.001, composition:0.001}
+    , as: {sion:-0.001, operation:-0.001, composition:-0.001, sensation:-0.001}
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
-    , on:  -2.20160910707
-    , to:  -1.57831005508
-    , at:  -0.100
+    , on:  201609107.3078333
+    , to:  578408013.3081110
+    , at:  -0.101
     , is:
         [ "doing on-request sequential namespaced id generation"
         , "returning the numeric sequential id"

@@ -3,11 +3,11 @@
 { re:
     { id:  'on.errors@ionify'
     , of: ['core','public','api']
-    , as: {malfunction:-0.001, sensation:-0.001}
+    , as: {malfunction:-0.001, operation:-0.001, sensation:-0.001}
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
-    , on:  -41.200709
-    , to:  - 8.578309101
-    , at:  - 0.008
+    , on:                      200709.304833
+    , to: {578408013.3081110 : 202411053.3088330}
+    , at: -0.009
     , is:
         [ "converting messages to Error objects"
         , "usage:"
