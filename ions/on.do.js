@@ -5,19 +5,25 @@
     , of: ['core','public','on.do','api']
     , as: {sensation:-0.001}
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.👨🏾‍💻.lee', 'team✨ionify']
-    , on:  -4.200709
-    , to:  -8.20221117
-    , at:  -0.010
+    , on:                       -4.2007098330
+    , to: {'-8.5784080621110' : -8.2024111028330}
+    , at:  -0.011
     , is:
         [ "sensing ~{on:'ion', as:[], has:[], id:[], is:[], do:action, no:action}"
+        ,  "the sim: semantic ion: invoked object notation, member original proposal"
+        ,  "an excellent specification composition validator proposal"
         ],
-      it:
+      im:
         [ 'sensor',  'sense', 'listen', 'handle', 'delegate', 'event', 'pubsub'
         , 'message', 'messaging'
         ],
+      it:
+        [
+        ],
       go:
-        { seek: 'https://api.ionify.net/'
-        , read: 'https://lingo.ionify.net/'
+        { meet: 'https://meet.ionify.net/'
+        , seek: 'https://seek.ionify.net/'
+        , know: 'https://know.ionify.net/'
         , deal: 'https://deal.ionify.net/'
         , help: 'https://github.com/ionify/ionify/issues'
       //, code: 'https://github.com/ionify/ionify/blob/public/ions/on.do.test.js'
@@ -166,7 +172,11 @@ return
         , on: -4.200709
         , to: -8.20211207
         , at: -0.1
-        , it: "senses ~{on:'ion', as:[], do:action, no:action}"
+        , it:
+            [ "senses ~{on:'ion', as:[], do:action, no:action}"
+            , "senses ions with as:['member','another'] named parts!"
+            ]
+            
         , we:
             [ "were ..."
             , "will explore ~re.of groups"

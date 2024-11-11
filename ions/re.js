@@ -5,9 +5,9 @@
     , re:  're.re@ionify'
     , of: ['core', 'public', 'sion', 'api']
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike.🇬🇾👨🏾‍💻🇺🇸.lee','team✨ionify']
-    , on:  {200709.2    : -4} || -2.20070904
-    , to:  {578310044.1 : -8} || -1.57831004408
-    , at:  -0.1  ||  -0.013 || "re@'s actual version"
+    , on:                      { 200709.8330    : -4} || -8330.20070904
+    , to:  {578310081.1130 : -8, 202301011.8330 : -8} || -1130.57831008108
+    , at:  -0.1  ||  -0.014 || "re@'s actual version"
     , ax:  -0.09 || [-0.09] || "what will re@ do? thank You 🙇🏾‍♂️🤲🏾 יהוה 🤲🏾👨🏾‍💻"
     , ex: "juss fuh see wah re@ guhn doooo 😅"
     , do:
@@ -36,7 +36,7 @@
       go:
         { meet: 'https://meet.ionify.net/'
         , seek: 'https://seek.ionify.net/'
-        , read: 'https://read.ionify.net/'
+        , know: 'https://know.ionify.net/'
         , deal: 'https://deal.ionify.net/'
         , help: 'https://help.ionify.net/'
         , test: 'https://github.com/ionify/ionify/blob/public/ions/re.test.js'
@@ -98,7 +98,9 @@
  '*',
  '*':function
   re( ion )
-    { var my = re.with.its
+    { re.count || (re.count = 0)
+
+      var my = re.with.its
         , RE
 
       for (var word in ion)
@@ -195,8 +197,10 @@
       Array.isArray  (it)
 
         ? it.forEach
-              (function next (element)
-              {   it [element] = true
+              (function next (element, index)
+              {   element = String (element).trim()
+                  it [index]    = element
+                  it [element]  = true
               })
 
         : typeof    it  == 'object'

@@ -5,10 +5,13 @@
     , of: ['core','public','sion','api','documentation']
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
     , as: {documentation:-0.001, sion:-0.001}
-    , on:  -2.20070904
-    , to:  -1.57831003308
-    , at:  -0.009
-    , re:
+    , on:  200709.3048330
+    , to:  578407281.3081110
+    , at:  -0.010
+    , re: 're-0.006@ionify'
+      ||  "should usually be string or array, but..."
+      ||  "can be an object to elaborate its sparse ion.re"
+      ||
         { id: 're@ionify'
         , at: -0.006
         , as:
@@ -24,32 +27,32 @@
         , `specifying ion re's as having these members:
 
               re.hi.id.re.of.as.by.in.on.to.at.ax.my.am.if.is.ex.we.go.do.it
-                .hi hidden.ion boolean | observer.name | observer.id
+                .hi handled invocation boolean | string:name
                 .re ~get.s stated ionified module stating fuller re.*
-                .id ~get.s stated domain(s) validation if configured
+                .id ~get.s stated organization's domain(s) validation if configured
                 .re states the sion's re@ ion 🤓
-                .of ~get.s stated groups & links to ion's members
-                .as ~get.s stated ai: actions & information types
+                .of ~get.s stated associations & links to ion's members
+                .as ~get.s stated ai: actions & information specifications
                 .by states ion's creators, authors & contributors
                 .in states ion's places where it's created & updated
                 .on states when ion was created
                 .to states when ion was updated
                 .at states current publication & revision version
-                .ax states current version's incompatibilities
+                .no states current version's version incompatibilities
                 .my public & internal api [alias] map with version compatibility
                 .am ~get.s stated am: attribution module(s)
                 .if states which groups can interact with ion & how
-                .is states description(s) of what the ion is +| does
+                .is states succinct description of what the ion is +| does
+                .it states verbose description(s) of what the ion is +| does
+                .im classification@s
                 .ex local-group for unregulated non-guaranteed data
                 .we states plans, ideas, notes, hopes, wants, & more
                 .go states uri links to plan, help, join, deal, code
-                .do thing(s) the ion does via one other ion(s)
-                .it states descriptive tags to help define the ion
-
-                .an ¿the ion's type(s) but differs from re.as how?
+                .do ~get.s ion's relations via which it does thing(s)
+                .im states classification terms to help ion discovery
+                .an abbreviation sensed & applied by re.id@ to anion@ operation@s
+ 
                 .be ¿key statements or warnings, some container?
-                .hi ¿introduction or welcome message or documentation?
-                .im ¿identities, entity resolutions, related ions or entities?
                 .me ¿identities, entity resolutions, related ions or entities?
                 .no ¿restricted actions & information; re.if | re.ax alternate?
                 .ow ¿compilation map of all errors or a finite # rotating set?
@@ -59,7 +62,9 @@
                 .yo ¿...?
 
               re.core
-                .hi.id.re.of.as.ax.by.on.to.at.my.if.is.go.do.ex
+                .hi.id.of.by.on.to.at.no.if.do.as.re.is.im.my.go.ex
+                .re: optional & auto-set to name.re* if unset
+                .my: optional & auto-set to public:* per ions configuration
                 .go: 'license|site uri, email address, or contact'
                   ,  ['license|site uri', 'email address', ...]
                   ,  {chat, code,deal,help,join,plan,seek,test}
@@ -67,12 +72,13 @@
                 .do: map of versioned ions helping this ion do things
 
               re.re
-                .am.id.is.on.to.at.in.it.we.go
+                .am.in.it.we.go
           `
         ],
       go:
         { meet: 'https://meet.ionify.net/'
         , seek: 'https://seek.ionify.net/'
+        , know: 'https://know.ionify.net/'
         , deal: 'https://deal.ionify.net/'
         , help: 'https://help.ionify.net/'
         , test: 'https://github.com/ionify/ionify/blob/public/ions/re.test.js'

@@ -6,9 +6,9 @@
     , as: {examination:-0.001}
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
     , in:  'silicon-valley.california.usa.earth'
-    , on:  -2.20160518407
-    , to:  -1.57830928508
-    , at:  -0.033
+    , on:  -8330.20160518407
+    , to:  -1110.57840704608
+    , at:  -0.034
     , is:  "testing ionify.js: invoked object notation implemented for your js"
     , do:
         [                 're.test@ionify',    're.of.test@ionify',      'with.test@ionify'
@@ -22,7 +22,7 @@
         { meet: 'https://meet.ionify.net/'
         , seek: 'https://seek.ionify.net/'
         , deal: 'https://deal.ionify.net/'
-        , read: 'https://read.ionify.net/'
+        , know: 'https://know.ionify.net/'
         , help: 'https://help.ionify.net/'
         , test: 'https://github.com/ionify/ionify/blob/public/tools/tests.js'
         , code: 'https://github.com/ionify/ionify/blob/public/ions/ions.js'
