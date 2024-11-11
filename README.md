@@ -48,7 +48,7 @@ three we've explored & confirmed capable, are
 for a detailed explanation of **ion**: invoked object notation, visit
 its [**📚 documentation**](https://github.com/ionify/about/blob/public/ions/ion.md#form).
 
-for applications of **ion** & **ionify** 🤲🏾 enjoy 🤲🏾 the following subsections:
+for **ion** & **ionify** applications, 🤲🏾 enjoy 🤲🏾 the following subsections:
 
 ### [domain-specific languages](https://en.wikipedia.org/wiki/Domain-specific_language)
 
@@ -94,10 +94,11 @@ phrases to actions:
                 prep.with.my.answer )// 👈🏾 with
       }
 }
-
-
+```
+```javascript
 ~ /ask.say interactions can be independent ions/
-
+```
+```javascript
 ~ { say: '👋🏾 hi!'                              }
 ~ { ask: "what's your name?"                   }
 ~ { say: "hi [answer]! i'm math e. bot 🤓"     }
@@ -242,7 +243,8 @@ such as user actions ..., sensor outputs, or messages from other programs or thr
       { on:'event', no:this.do}
     }
 }
-
+```
+```javascript
 ~ /this event ion could be in a separate file!/
 ~ {event: 'it happened!'} <= /invokes an event/
 ```
@@ -279,9 +281,11 @@ anonymous & named objects:
       /logs "i'm a json!" 2nd/
     }
 }
-
-~ / each ion can be in a local or remote file /
-
+```
+```javascript
+~ / each ion can be one local, or remote, file/
+```
+```javascript
 ~ { hi : "i'm an ion!"}  <=  /invoke an object/
 ~ {"hi": "i'm a json!"}  <=  /invoke some json/
 ```
@@ -292,7 +296,7 @@ anonymous & named objects:
 i.e. `~/ / + [ ] & { }`, eliminate name collisions, by encapsulating their
 [identifiers](https://en.m.wikipedia.org/wiki/Identifier#In_computer_languages).
 
-**ionify** enables individually observing & inspecting, multiple identically identified
+**ionify** enables individually observing & inspecting, multiple identical & local
 **lions**. this capability enables **lions** to simultaneously coexist, within the same
 [execution context](https://262.ecma-international.org/6.0/#sec-execution-contexts),
 without overriding all, or parts, of each other:
@@ -321,9 +325,11 @@ without overriding all, or parts, of each other:
           { on: ion.re.id, no: this.do }
     }
 }
-
+```
+```javascript
 ~ /these ions can be together or in separate files/
-
+```
+```javascript
 ~
 { re:
     { id: 'my.ion@doma.in'
@@ -334,7 +340,8 @@ without overriding all, or parts, of each other:
     , is: "sharing the intended module's id"
     }
 }
-
+```
+```javascript
 ~
 { re:
     { id: 'my.ion@doma.in'
@@ -343,7 +350,8 @@ without overriding all, or parts, of each other:
     , is: 'identifying the intended module 🎉'
     }
 }
-
+```
+```javascript
 ~
 { re:
     { id: 'my.ion@doma.in'
