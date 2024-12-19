@@ -6,10 +6,10 @@
     , of: ['core','public','conduit','api','launch']
     , as: { observation :-0.001, sensation    :-0.001 }
     , do: { resolution  :-0.001, transcription:-0.001 }
-    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike🇬🇾👨🏾‍💻🇺🇸lee', 'team✨ionify']
-    , on: {200709.2    : -4}
-    , to: {578311211.1 : -8}
-    , at: -0.090
+    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', '🇬🇾micha🙇🏾‍♂️el🤲🏾lee🇺🇸', 'team✨ionify']
+    , on: {576706.3041130   : 200709.3048330   }
+    , to: {57840905.3081110 : 202412125.3088330}
+    , at: -0.091
     , is:
         [ "ionify: invoked object notation implemented for you"
         , "enabling the ionosphere: invoked object notation observation sphere"
@@ -48,10 +48,12 @@
         , "WANT ionify@ group inaccessible via ion.valueOf.with:our & in.domain"
         , "want ⏩ to replace group.test() with .hasKnownWord()"
         ,
-        [ "WERE 👨🏾‍💻 migrating on.ionified here & with@ sharing as a public tool"
-        , "WERE 👨🏾‍💻 beginning sensible <= on.ionified migration"
+        [ "were 👨🏾‍💻 migrating on.ionified here & with@ sharing as a public tool"
+        , "were 👨🏾‍💻 beginning sensible <= on.ionified migration"
         , "WILL 👨🏾‍💻 rename sensible <= ionified; confirms sensible ion types"
         , "want 🙇🏾‍♂️ boolean < {sensible:'name', in:object} +find-resolved 🤲🏾"
+        , "have 🙇🏾‍♂️ +{sensible:value} & +{sensible:'identifier', in:globalThis}🤲🏾"
+        , "will 🙇🏾‍♂️ ~{sensible:value} = ~-1 for insensible:value"
         , "like + {is:thing, type:'sensible'} <= sensible [typeof todo]"
         ]
         ,
@@ -159,7 +161,7 @@
   sensible  (action)
     { var    as = action.as || action.sensible
         , within= action.in
-        , thing = within && within [as]
+        , thing = within && within [as] || as
         ,  type = thing ===  null ? 'null' : typeof thing
         ,   via = sensible.with
         ,   our = via.our
