@@ -1,3 +1,4 @@
 **/._*
 **/*.DS_Store
 .vscode/**
+/tools/scm.commit.message.txt
