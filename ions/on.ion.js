@@ -7,9 +7,9 @@
     , as: { observation :-0.001, sensation    :-0.001 }
     , do: { resolution  :-0.001, transcription:-0.001 }
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾', '🇬🇾micha🙇🏾‍♂️el🤲🏾lee🇺🇸', 'team✨ionify']
-    , on: {576706.3041130   : 200709.3048330   }
-    , to: {57840905.3081110 : 202412125.3088330}
-    , at: -0.091
+    , on: {576706.3041130    : 200709.3048330   }
+    , to: {578409095.3081110 : 202412125.3088330}
+    , at: -0.092
     , is:
         [ "ionify: invoked object notation implemented for you"
         , "enabling the ionosphere: invoked object notation observation sphere"
