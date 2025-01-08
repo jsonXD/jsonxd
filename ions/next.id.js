@@ -2,33 +2,53 @@
 ~
 { re:
     { id:  'next.id@ionify'
-    , of:  'core'
-    , as:  'action'
-    , by: ['mike.lee', 'team']
-    , on:  -7.20160910
-    , to:  -8.20211206
-    , at:  -0.1
-    , is: 'generating namespaced sequential ids, per request'
+    , of: ['public','tools','api']
+    , as: {sion:-0.001, sensation:0.001, composition:0.001}
+    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
+    , on:  -2.20160910707
+    , to:  -1.57831005508
+    , at:  -0.100
+    , is:
+        [ "doing on-request sequential namespaced id generation"
+        , "returning the numeric sequential id"
+
+        , '+{next: "id.prefix", id: object}'
+
+        , "recommended for use with + invocation to receive actual numeric id"
+        , "recommended for use with -~... invocations if numeric id not needed"
+        ],
+      we:
+        [ "want to encapsulate its internal members, i.e. MAX, MIN, ids"
+        , "like valueOf switching nextid creating a private internals closure"
+        ]
     }
 
 , on  : [['next', 'id']]
 , MAX : Number.MAX_SAFE_INTEGER ||  9007199254740991
 , MIN : Number.MIN_SAFE_INTEGER || -9007199254740991
-, ids : {}
-,
+, ids : {},
+
+  with:
+    { the:
+        { tools:
+            { nextid: 'next id@next.id@'
+            }
+        }
+    },
+
   valueOf :function
   nextid  ()
-    { this ['next id'].with = this
-    ; delete this.valueOf
-    ~ this
+    { this.with.the.tools.nextid = this ['next id']
+      this ['next id'].with = {its:this, the:this.with.the}
+      delete this.valueOf  <=  this
     },
 
  'next id':function
-  next_id (action)
-    { var my   = next_id.with
+  nextid (action)
+    { var my   = nextid.with.its
         , ids  = my.ids
         , name = action.next
-        , f0r  = action.id.re || (ion.id.re = {})
+        , f0r  = action.id.re || (action.id.re = {})
         , id   = ids [name]
 
     ; (id >= my.MAX)  && (id = ids [name] = null)

@@ -3,103 +3,119 @@
 { re:
     { id:  'get.test@ionify'
     , of: ['tests','core','api']
-    , as: ['examination.0','acquisition','composition','sensation']
-    , by: ['mike.👨🏾‍💻.lee', 'team']
-    , on:  -4.200709
-    , to:  -7.20220629
-    , at:  -0.021
-    , is:  "ionify's ~get api examination"
+    , do: {acquisition:true, transcription:true}
+    , as: {examination:-0.001}
+    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
+    , on:  -2.20070904
+    , to:  -1.57831004408
+    , at:  -0.026
+    , is:  "ionify's ~get.in.and.then.if api examination"
     , go:
-        { seek: 'https://api.ionify.net/'
+        { meet: 'https://meet.ionify.net/'
+        , seek: 'https://seek.ionify.net/'
         , deal: 'https://deal.ionify.net/'
-        , help: 'https://github.com/ionify/ionify/issues'
-        , code: 'https://github.com/ionify/ionify/blob/public/web.js'
+        , read: 'https://read.ionify.net/'
+        , help: 'https://help.ionify.net/'
         , test: 'https://github.com/ionify/ionify/blob/public/ions/get.test.js'
-        , plan: 'https://github.com/ionify/ionify/projects/1?fullscreen=true'
-        , join: 'https://github.com/ionify/about/tree/public/team'
+        , code: 'https://github.com/ionify/ionify/blob/public/ions/get.js'
+        , talk: 'https://talk.ionify.net/'
+        , plan: 'https://plan.ionify.net/'
+        , join: 'https://join.ionify.net/'
+        , team: 'https://team.ionify.net/'
         },
       we:
         [ "were ..."
-        , "must ..."
+        , "must test ~get.in"
+        , "must test ~get.then.if"
         , "will ..."
-        , "want ..."
+        , "want tests named within a ~do"
         , "like ..."
         ]
     },
 
-  valueOf:function
-  test_get()
-    { delete this.valueOf <- this
+  do:function
+  test_get ()
+    { var state = Boolean (+{info:null})
 
-      ~ {get:''}         <-  /testing getting the .js file/
-      ~ {get:'@ionify'}  <-  /testing getting the @domain's .js file/
+      ~ {get:''}         <=  /testing getting the .js file/
+      ~ {get:'@ionify'}  <=  /testing getting the @domain's .js file/
 
       ~
-      { get:'../ions/i'
+      { get:'narrator@ionify'
       , and:
-          { log: "✅ ~get:script and:{} do oli: object-literal invocation"
+          { log: "✅ ~get:script and:do {} oli: object-literal invocation"
           }
       }
-      +
-      { get:'../ions/i'
+      ~
+      { get:'narrator@ionify'
       , and:
-          [{ log: "✅ ~get:script and:[{}] do aeon: array-expressed object notation"
+          [{ log: "✅ ~get:script and:do [{}] aeon: array-expressed object notation"
           }]
       }
-      +
-      { get:'../ions/i'
+      ~
+      { get:'narrator@ionify'
       , and:
           [ {info:true}
-          , /✅ ~get:script and:[\/\/,{}] do aeon: array-expressed object notation/
+          , /✅ ~get:script and:do [\/\/,{}] aeon: array-expressed object notation/
+          , {info:state}
           ]
       }
-      +
-      { get:'../ions/i'
+      ~
+      { get:'narrator@ionify'
       , and:
-          /✅ ~get:script and: \/\/     do storie: statement, text, or recognition expression/
+          /✅ ~get:script and:do  \/\/     storie: stated text of recognition expression/
+      , info:true
       }
-      +
-      { get:'../ions/i'
+      ~
+      { get:'narrator@ionify'
       , and:function
         and ()
-          { ~
-            /✅ ~get:script and:Function/
+          {
+          + { log: ["✅ ~get:script and:do Function", and.with.my.get]}
           }
       }
-      +
-      { info:false }
+      ~
+      {info:state}
 
       ~
-      { get : '../ions/i'
+      { get : 'narrator@ionify'
       , in  : 'order'
       , then:
-          { log: "✅ ~get:script in:order then:{} do oli: object-literal invocation"
+          { log: "✅     ~get:script     in:order then:do {} oli: object-literal invocation"
           }
+      , warn: "🚨 need invocations returning invoked-or-not # state to confirm 🚨"
       }
-      +
-      { get : '../ions/i'
+      ~
+      { get : 'narrator@ionify'
       , in  : 'order'
-      , then:  function
-         hi()
+      , then: function
+        hi()
           {
-          + {log: ["✅ ~get:script in:order then:Function", hi.with.get]}
+          + {log: ["✅     ~get:script    in:order then:do Function:", hi.with.my.get]}
           }
       }
-
 
       ~
       { log:"testing ~get grouped & ordered with a shared ~get.then..."
-      ,  in: 'order'
+      , say:"    ~get:scripts[] in:order then:do Function"
+      , err:"🚨 must make get.batch@web@ .onload that ~.thens after all load 🚨"
+      ,  in:'order'
       , get:
           [ 'https://cdn.jsdelivr.net/gh/iskitz/ajile/use/com.iskitz.ajile.js?mvcoff,mvcshareoff'
           , 'https://cdn.jsdelivr.net/gh/iskitz/ajile/play/api/scripts/com.iskitz.ajile.examples.LoadExample.js'
           ],
-        then:function
-        onLoadExample ()
-          {  ~com.iskitz.ajile.examples.LoadExample
+        then:         function
+        onLoadExample (scripts)
+          { var my  = onLoadExample.with.my
+              , say = my.say
+              ; scripts = "\n   " + scripts.join ("\n   ")
+
+            com.iskitz.ajile.examples
+              ? {log  : ["✅", say,scripts]}
+                + com.iskitz.ajile.examples.LoadExample
+              : {error: ["❌", say,scripts], halt:false} + {warn : my.err}
           }
       }
-
 
       ~
       { log: "testing ~get's individually ~do-group ordered with 1 aliased & shared then"
@@ -113,8 +129,10 @@
             }
           ],
         doIt:function
-        onIncludeExample ()
-          {  ~com.iskitz.ajile.examples.IncludeExample
+        onIncludeExample (script)
+          {  var got = "\n   " + script.target.id
+          ~ {log: ["✅ ~do:[get:script    in:order then:Function:named]", got]}
+          ~  com.iskitz.ajile.examples.IncludeExample
           }
       }
 
@@ -132,11 +150,10 @@
       , in: 'order'
       , then:
           function onLoadExample ()
-            {  ~com.iskitz.ajile.examples.LoadExample
+            {  +com.iskitz.ajile.examples.LoadExample
             }
       }
       */
     }
 }
-
 ;

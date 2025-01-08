@@ -2,25 +2,36 @@
 ~
 { re:
     { id:  'use@ionify'
-    , of:  'core'
-    , as:  'action'
-    , by: ['mike.lee@ionify.net', 'team']
+    , of:  ['core','public','api']
+    , as:  {sensation:-0.001, composition:-0.001}
+    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike👨🏾‍💻lee@ionify.net', 'team✨ionify']
     , on:  -4.200709
-    , to:  -8.20211126
-    , at:  -0.1
+    , to:  -8.20221117
+    , at:  -0.010
     , is: "enabling the use of an ion's thing(s)"
-    , we:
+    , go:
+        { seek: 'https://api.ionify.net/'
+        , read: 'https://lingo.ionify.net/'
+        , deal: 'https://deal.ionify.net/'
+        , help: 'https://github.com/ionify/ionify/issues'
+      //, test: 'https://github.com/ionify/ionify/blob/public/ions/use.test.js'
+        , code: 'https://github.com/ionify/ionify/blob/public/ions/use.js'
+        , plan: 'https://github.com/ionify/ionify/projects/1?fullscreen=true'
+        , join: 'https://join.ionify.net/'
+        , team: 'https://team.ionify.net/'
+        },
+      we:
         [ "must confirm ion id for each ~on:use before acting"
         , "will enable using with ion ids"
-                  +{use: 'wakatta.view@.show',      in: 'wakatta.game@'}
+                ||+{use: 'wakatta.view@.show',      in: 'wakatta.game@'}
                   +{use: 'view@.thing', as: 'game.view@.thing'}
                   +{use: 'view@.show',  as: 'show', in: 'game@'}
         , "want ~use:{name :alias} in:object"
         , "want ~use:{name@:alias} in:[ions]"
         , "want ~use.from for non-ions & ions!"
-                  +{use: 'show', from: 'wakatta.view', in: 'game'}
+                ||+{use: 'show', from: 'wakatta.view', in: 'game'}
         , "want ~get.then: ~use.in.as: helps wakatta & is like ajile's ImportAs"
-                  +
+                ||+
                   { use: 'thing'    || ['thing', ". . .", 'other.things']
                   ,  in:  this.item || 'ion.id@'
                   ,  as: 'alias'
@@ -68,7 +79,7 @@
     ],
   "use as in":
     function useAsIn (ion)
-      { var USE     = useAsIn.with
+      { var USE     = useAsIn.with.its
           , errors  = USE.errors
           , onUse   = USE.getOnUse
           , validIn = USE.okIn
@@ -84,7 +95,10 @@
           , last   = next.length
           , on
 
-        for (var inThing = -1; ++inThing < last;)
+        for
+          ( var inThing = -1, asThing
+          ;  ++ inThing < last      ;
+          )
           { within  = next [inThing]
             validIn [typeof within] || ~errors.badIn
             asThing = -1
@@ -113,7 +127,7 @@
     ],
   "use in":
     function useIn (ion)
-      { return useIn.with ["use as in"] (ion);
+      { return useIn.with.its ["use as in"] (ion);
       },
 
   useStories:
@@ -123,7 +137,7 @@
   use:
     function onUse (ion)
       { ion.in = ion
-        onUse.with ["use as in"] (ion)
+        onUse.with.its ["use as in"] (ion)
       }
 }
 ;

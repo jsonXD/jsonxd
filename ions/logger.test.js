@@ -2,13 +2,13 @@
 ~
 { re:
     { id:  'logger.test@ionify'
-    , of: ['tests','core','transcription','composition','sensation']
-    , as: ['examination.0']
-    , by: ['mike.👨🏾‍💻.lee', 'kaito.🧑🏾‍🦱.lee', 'team']
+    , of: ['tests','public','transcription','api']
+    , as: {examination:0.001, transcription:0.001}
+    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.👨🏾‍💻.lee', 'kaito.🧑🏾‍🦱.lee', 'team✨ionify']
     , in: ['silicon-valley.california.us.earth']
     , on:  -4.200709
-    , to:  -7.20220627
-    , at:  -0.06
+    , to:  -8.20221106
+    , at:  -0.07
     , is: "ionify's ~{info,log,debug,warn,error} transcription api examination"
     , go:
         { help: 'https://github.com/ionify/ionify/issues'
@@ -43,18 +43,14 @@
       this.test_warn  ()
     },
 
-  my:
-    { own:
-        { message:
-            { disabled: "can be disabled"
-            , operates: "can be enabled, recorded & disabled"
-            }
-        }
+  message:
+    { disabled: "can be disabled"
+    , operates: "can be enabled, recorded & disabled"
     },
 
   test_debug :function
   test_debug ()
-    { var  mode = this.my.own.message
+    { var  mode = this.message
         ,  debug= +{debug:null}
         ~ {debug: false}
         - {debug: "❌ ~debug " + mode.disabled}
@@ -65,7 +61,7 @@
 
   test_info :function
   test_info ()
-    { var  mode= this.my.own.message
+    { var  mode= this.message
         ,  info= +{info:null}
         ~ {info: false}
         - {info: "❌ ~info " + mode.disabled}
@@ -76,7 +72,7 @@
 
   test_log :function
   test_log ()
-    { var mode= this.my.own.message
+    { var mode= this.message
         ,  log= +{log:null}
         ~ {log: false}
         - {log: "❌ ~log " + mode.disabled}
@@ -87,7 +83,7 @@
 
   test_warn :function
   test_warn ()
-    { var  mode= this.my.own.message
+    { var  mode= this.message
         ,  warn= +{warn:null}
         ~ {warn: false}
         - {warn: "❌ ~warn " + mode.disabled}
@@ -98,7 +94,7 @@
 
   test_error :function
   test_error ()
-    { var  mode = this.my.own.message
+    { var  mode = this.message
         ,  error= +{error:null}
         ~ {error: false}
         - {error: "❌ ~error " + mode.disabled, halt:false}
@@ -117,19 +113,19 @@
 
         ~ {error: !!error}
 
-        ~ {debug:true}
+      var  debug= +{debug:null}
+        ~ {debug:   true}
         + {debug
           : "kaito lee & michael daddy lee\n\t"
           + "@ -8.20211129\n\t"
-          + "🍭🥣🚘🚞🚞🚘👨🏾‍🦱💪🏽🐛🧑🏾‍🦱🧸🛏😗👨🏾‍🦱🆎\n\t"
-          + "🆚🈸💮🈴🆘📛🅰️🅱️㊗️🈚️🈶🆚🈴🈲㊗️🅰️\n\t"
-          + "㊙️㊗️✴️✴️✴️🈷️🆘🅾️🆘🆘🅾️🅰️🅱️🆎🅱️🅾️\n\t"
-          + "🅾️🆘🆎🆎🅾️🈲🈲㊙️🖤🤍☦️☦️✡️⛎⛎🉑\n\t"
-          + "♌️🎅🏾🧑🏾‍🎄💤\n\t"
+          + "🍭🥣🚘🚞🚞🚘👨🏾‍🦱💪🏽🐛🧑🏾‍🦱🧸🛏😗👨🏾‍🦱\n\t"
+          + "🆎🆚🈸🈴🆘🅰️🅱️㊗️🈚️🈶🆚🈴🈲㊗️\n\t"
+          + "🅰️㊙️㊗️🈷️🆘🅾️🆘🆘🅾️🅰️🅱️🆎🅱️🅾️\n\t"
+          + "🅾️🆘🆎🆎🅾️🈲🈲㊙️🖤🤍🉑💤\n\t"
           + "goodmbvgddfbzfttdx\n\t"
           + "goodphone"
           }
-        + {debug:false}
+        + {debug:!!debug}
     }
 }
 ;

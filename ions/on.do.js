@@ -2,25 +2,29 @@
 ~
 { re:
     { id:  'on.do@ionify'
-    , of: ['on.do', 'core']
-    , as: ['sensor',  'sense', 'listen', 'handle', 'delegate', 'event', 'pubsub'
-          ,'message', 'messaging'
-          ]
-    , is: ['action', 'sensor']
-    , by: ['mike.lee', 'team']
+    , of: ['core','public','on.do','api']
+    , as: {sensation:-0.001}
+    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.👨🏾‍💻.lee', 'team✨ionify']
     , on:  -4.200709
-    , to:  -7.20211207
-    , at:  -0.1
-    , it:
-        [ "senses ~{on:'ion', as:[], has:[], id:[], is:[], do:action, no:action}"
+    , to:  -8.20221117
+    , at:  -0.010
+    , is:
+        [ "sensing ~{on:'ion', as:[], has:[], id:[], is:[], do:action, no:action}"
+        ],
+      it:
+        [ 'sensor',  'sense', 'listen', 'handle', 'delegate', 'event', 'pubsub'
+        , 'message', 'messaging'
         ],
       go:
-        { plan: 'https://github.com/ionify/ionify/projects/1?fullscreen=true'
+        { seek: 'https://api.ionify.net/'
+        , read: 'https://lingo.ionify.net/'
+        , deal: 'https://deal.ionify.net/'
         , help: 'https://github.com/ionify/ionify/issues'
+      //, code: 'https://github.com/ionify/ionify/blob/public/ions/on.do.test.js'
         , code: 'https://github.com/ionify/ionify/blob/public/ions/on.do.js'
-        , team: 'https://github.com/ionify/about/tree/public/team'
-        , deal: 'https://github.com/ionify/ionify/blob/public/LICENSE.txt'
-        , more: 'https://api.ionify.net/'
+        , plan: 'https://github.com/ionify/ionify/projects/1?fullscreen=true'
+        , join: 'https://join.ionify.net/'
+        , team: 'https://team.ionify.net/'
         },
       we:
         [" were about to implement ~on.id.do.no but..."

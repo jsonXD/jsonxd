@@ -3,22 +3,24 @@
 { re:
   { id:  'on.do.test@ionify'
   , of: ['tests','core','conduit','sensation','composition']
-  , as: ['examination.0']
-  , by: ['mike.👨🏾‍💻.lee', 'team']
+  , as: {examination:-0.001}
+  , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.👨🏾‍💻.lee', 'team✨ionify']
   , on:  -4.200709
-  , to:  -8.20220627
-  , at:  -0.06
+  , to:  -8.20221122
+  , at:  -0.07
   , is:
       [ "ionify's ~on.as.has.id.is.do.no api examination"
       ],
     go:
-      { help: 'https://github.com/ionify/ionify/issues'
-      , plan: 'https://github.com/ionify/ionify/projects/1?fullscreen=true'
-      , code: 'https://github.com/ionify/ionify/blob/public/ions/on.do.js'
-      , test: 'https://github.com/ionify/ionify/blob/public/ions/on.do.test.js'
+      { meet: 'https://meet.ionify.net/'
+      , seek: 'https://seek.ionify.net/'
       , deal: 'https://deal.ionify.net/'
-      , join: 'https://github.com/ionify/about/tree/public/team'
-      , seek: 'https://api.ionify.net/'
+      , help: 'https://help.ionify.net/'
+      , test: 'https://github.com/ionify/ionify/blob/public/ions/on.do.test.js'
+      , code: 'https://github.com/ionify/ionify/blob/public/ions/on.do.js'
+      , plan: 'https://plan.ionify.net/'
+      , join: 'https://join.ionify.net/'
+      , team: 'https://team.ionify.net/'
       },
     we:
       [ "were examining ~on.as ¿partial 🐛 matching?"

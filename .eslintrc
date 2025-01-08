@@ -28,9 +28,9 @@
     ,   "strict"               : 0
     ,   "quotes"               : 0
     ,   "yoda"                 : 0
-    }
-  
- , "parserOptions":
+    },
+
+   "parserOptions":
     {   "ecmaVersion" : 6
     ,   "ecmaFeatures":
           {   "defaultParams"                   : true
@@ -42,9 +42,9 @@
           ,   "spread"                          : true
           ,   "templateStrings"                 : true
           }
-    }
+    },
 
-, "env":
+  "env":
     {   "browser" : true
     ,   "node"    : false
     }

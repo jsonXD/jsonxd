@@ -1,55 +1,77 @@
 ;
 ~
 { re:
-    { id:  'logger@ionify'
-    , of: ['core','api']
-    , as: ['composition','sensation']
-    , by: ['mike.👨🏾‍💻.lee', 'kaito.🧑🏾‍🦱.lee', 'team']
-    , in: ['queens-county.new-york.us.earth', 'silicon-valley.california.us.earth']
-    , on:  -4.200709
-    , to:  -7.20220627
-    , at:  -0.045
-    , is:
-        [ "ionify's record logging composition:"
+    { hi:   true
+    , id:  'logger@ionify'
+    , of: ['public', 'transcription', 'tools', 'api']
+    , by: ['🙇🏾‍♂️ יהוה 🤲🏾', 'mike.🇬🇾👨🏾‍💻🇺🇸.lee', 'team✨ionify']
+    , on: {200709.2    : -4}
+    , to: {578311196.1 : -8}
+    , at: -0.055
+    , do: {malfunction:true}
+    , as: {sensation:-0.001}
+    , in:
+        [    'queens-county.new-york.us.earth'
+        , 'silicon-valley.california.us.earth'
+        ],
+      is:
+        [ "ionify's transcription sensation:"
 
         , '~{debug:*}, ~{error:*}, ~{info:*}, ~{log:*} & ~{warn:*}'
 
         , '~ {log_level: true || false}'
-        + '  true enables & false disables recording at the specified log level'
+        + '  true enables & false disables recording at the specified level'
         + '  i.e. debug, error, info, log, or warn.'
 
         , '+ {log_level: null}'
         , '  reports if the log level is enabled:1:true | disabled:0:false'
         , '  the unary operator is critical for acquiring a correct log level state'
         , "  +|- unary operators always correctly report the log level's state"
-        , '  a ~ unary operator  always reports the log level state as enabled 👎🏾'
+        , "  a ~ unary operator  always 😒 reports the log level state's enabled"
         , '  ~~ {log_level:null} can be used to report the correct log level'
 
         , '+ {log_level: "message"}'
-        , "  records a message at the specified log level if it's enabled"
+        , "  records a message at the specified level if it's enabled"
 
         , '+ {log_level: reference}'
         , '  passes the referenced object to the underlying logger, e.g. console,'
         + '  to enable more informative, developer-level, object rendering'
         ],
       go:
-        { plan: 'https://github.com/ionify/ionify/projects/1?fullscreen=true'
-        , help: 'https://github.com/ionify/ionify/issues'
-        , code: 'https://github.com/ionify/ionify/blob/public/ions/logger.js'
-        , test: 'https://github.com/ionify/ionify/blob/public/ions/logger.test.js'
+        { meet: 'https://meet.ionify.net/'
+        , seek: 'https://seek.ionify.net/'
         , deal: 'https://deal.ionify.net/'
-        , join: 'https://github.com/ionify/about/tree/public/team'
-        , seek: 'https://api.ionify.net/'
+        , help: 'https://help.ionify.net/'
+        , test: 'https://github.com/ionify/ionify/blob/public/ions/logger.test.js'
+        , code: 'https://github.com/ionify/ionify/blob/public/ions/logger.js'
+        , talk: 'https://talk.ionify.net/'
+        , plan: 'https://plan.ionify.net/'
+        , join: 'https://join.ionify.net/'
+        , team: 'https://team.ionify.net/'
         },
       we:
-        [ "want '⚠️' 🐛 in blink web views to render with full yellow color & size"
-        , 'like moving display logic to host, e.g. web:alert vs web+node:console'
-
-        , 'like defining & sensing log reporting api actions; maybe hosts can '
-        + 'share their own so logger can sesnse & adopt them! 🤓'
-
-        , "like adding ~{log_level:..., to:'nowhere'||'webview'} later but "
-        + 'know it enables in-context-session entities to unexpectedly hide records'
+        [ "MUST 🚨 fix +{log:[1]} basic types doing console object presentation"
+        , "WILL rename   fail:error, seek:debug, note:log levels"
+        , "LIKE renaming transcribe@👍🏾verb|transcript@🤔noun <= logger@"
+        , "WANT to reenable 1st-launch listing all transcription-level satuses"
+        , "WANT 👨🏾‍💻 [message, base, object] sensing object --> console(object)"
+        ,
+        [ "want 🙇🏾‍♂️ displaying via habitation@: web:alert vs web+node:console"
+        , "like 🙇🏾‍♂️ adoption@s having a .via property that habitation@ sets"
+        ]
+        , "will ~debug:{ionid:true|false} to [en|dis]able per-ion transcription"
+        , "were exploring re.on+to instantiation@s calendarids + timezone + dow"
+        , "were exploring with.*:* sharing via boolean permissions"
+        , "like paired level:message & info-level:id generated-id transcription"
+        , "want 🚨 Blink web views' '⚠️' to render with full yellow color & size"
+        ,
+        [ "like defining & sensing transcription@ apis; maybe habitation@s can"
+        , "send their own so logger can sense & adopt them! 🤓"
+        ],
+        [ "like adding ~{log_level:..., to:'nowhere'||'webview'} later but"
+        , "know it enables in-context-session entities' unexpected record-hides"
+        , "like that this could support silent pre-presentation logging: launch"
+        ]
         ]
     },
 
@@ -57,38 +79,34 @@
     [ 'error', 'warn', 'debug', 'log', 'info'
     ],
 
-
-  valueOf :function
-  logger  ()
-    { this.report ({error:null, warn:null, debug:null, log:null, info:null})
+  with:
+    { the:
+        { tools: {'*': {error:true, warn:true, debug:true, log:true, info:true}}
+        }
     },
 
   ionify :function
   ionify ()
-    { delete (this.valueOf) && ~ this
-      var logger = ionify.with
-
-      ionify.our.share
-        ({ to  :     logger.re.id || ~/want logger@ to share log-level actions with *everyone*/
-         , link:
-            { debug: logger.debug
-            ,   log: logger.log
-            ,  info: logger.info
-            ,  warn: logger.warn
-            , error: logger.error
-         }  })
+    { var   logger  = this
+        ,   domain  = ionify.with.the.tools
+      domain.debug  = logger.debug
+      domain.log    = logger.log
+      domain.info   = logger.info
+      domain.warn   = logger.warn
+      domain.error  = logger.error
+      this.report ({error:null, warn:null, debug:null, log:null, info:null})
     },
 
   debug :function
   debug (action)
-    { var    logger       =  debug.with
+    { var    logger       =  debug.with.its
     ;        logger.level = 'debug'
     ; return logger.report  (action)
     },
 
   error :function
   error (action)
-    { var logger       = error.with
+    { var logger       = error.with.its
         ; logger.level = 'error'
 
       var state   = logger.report (action)
@@ -96,28 +114,28 @@
         , halt    = action.halt !== false
 
       if( message === null || !halt) return state
-      if('boolean' != typeof message   &&   state) ~new Error (message)
+      if('boolean' != typeof message   &&   state) +new Error (message)
 
       return state
     },
 
   info :function
   info (action)
-    { var    logger       =  info.with
+    { var    logger       =  info.with.its
     ;        logger.level = 'info'
     ; return logger.report  (action)
     },
 
   log :function
   log (action)
-    { var    logger       =  log.with
+    { var    logger       =  log.with.its
     ;        logger.level = 'log'
     ; return logger.report  (action)
     },
 
   warn :function
   warn (action)
-    { var    logger       =  warn.with
+    { var    logger       =  warn.with.its
     ;        logger.level = 'warn'
     ; return logger.report  (action)
     },
@@ -125,28 +143,30 @@
   record :function
   record (action)
     { var toggled
-        , logger  = record.with
-        , logging = record.our.logging   ||
-                   (record.our.logging = {})
+        , logger  = record.with.its
+        , logging = record.with.our.logging   ||
+                   (record.with.our.logging = {})
         , level   =  logger.level
         , message =  action [level]
         , state   = logging [level]
         ; logging [level] = logger.state = state
 
-      if (null === message) return false
-
-      if('boolean' ==  typeof message)
+      if( null === message) return false
+      if('boolean' == typeof message)
       if( toggled  =  (message !=  state))
           {   logging [level]   =  state = logger.state = message
-          ;   message           = (state ? '✅' : '🚫') + ' ~'  + level
-          }
+          ;   message           = (state ? '🟢' : '🚫') + ' ~'  + level
+          }   else          return false
 
       state
         &&   Array.isArray   ( message   )
         &&  'string' == typeof message [0]
         &&  (message =  message.join (' '))
 
-      logger.id = (action.re && action.re.from) || logger.re.id
+      var prefix
+      logger.id = ((action.re && action.re.ex.from) || logger.re.id).name
+     ~logger.id.indexOf('@') || (prefix = logger.id.match(/^(log|ion)[.-]\d+/))
+      prefix && (logger.id = (prefix[1] == 'log' ? logger.level : 'sion') + '@')
 
       logger.message
         =   'string' == typeof message
@@ -164,18 +184,18 @@
   report :function
   report (action)
     { var icono =
-          { debug: '🐛'
-          , error:  ""
-          ,  info: '💡'
-          ,   log: '📋'
-          ,  warn:  ""
+          { debug: '🔎 '
+          , error: ' '
+          ,  info: '🤓 '
+          ,   log: '📋 '
+          ,  warn: ' '
           }
 
       var icons =
-          { debug: icono.debug + ' '
+          { debug: icono.debug
           , error: '❌ '
-          ,  info: icono.info  + ' '
-          ,   log: icono.log   + ' '
+          ,  info: icono.info
+          ,   log: icono.log
           ,  warn: '⚠️ '
           }
 
@@ -204,39 +224,40 @@
       if( missing.console)
         if( missing.alert)
           { logger.report = missing
-            logger.ionify ()
           ~ action
-          ~ new Error (logger.messages.noReports)
+          + new Error (logger.messages.noReports)
           }
         else
           { logger.report = logger.popup
-            logger.ionify ()
           ~ {warn: true }
-          & {warn: logger.messages.noConsole}
-          & {warn: logger.report.our.logging.warn}
+          + {warn: logger.messages.noConsole}
+          + {warn: logger.report.with.our.logging.warn}
           }
-      else logger.ionify ()
+      else
+        { logger.console.via = console
+        }
 
     ~ action
     },
 
   missing :function
   missing (action)
-    { var    logger=missing.with
+    { var    logger=missing.with.its
     ;        logger.record (action)
     ; return logger.state
     },
 
   console :function
-  cons0le (action)
-    { var    logger=cons0le.with
-    ;        logger.record (action) && console [logger.level] (logger.message)
+  console (action)
+    { var    logger = console.with.its
+    ,        via    = console.via
+    ;        logger.record (action) && via [logger.level] (logger.message)
     ; return logger.state
     },
 
   popup :function
   popup (action)
-    { var    logger=popup.with
+    { var    logger=popup.with.its
     ;        logger.record (action) && alert (logger.message)
     ; return logger.state
     }
