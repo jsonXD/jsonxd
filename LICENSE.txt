@@ -1,6 +1,6 @@
 The God License (GOD)
 
-Copyright (c) 2007-2023 Michael Lee <about.ionify.net>
+Copyright (c) 2007-2025 Michael Lee <about.ionify.net>
 
 Permission is hereby granted, free of charge, to any person
 ("You", "you", "your", "yourself", "those", "one") obtaining a copy of this
