@@ -10,7 +10,7 @@ and is maintained by
 [**team✨ionify**](https://team.ionify.net/):
 
 ```javascript
-~ {   log  : '👋🏾👨🏾‍💻'   } <= /do transcription/
+~ {   log  : '👋🏾👨🏾‍💻'  } <= /do transcription/
 + { "json" : "data"  } <= /json information/
 & ["natural language"] <= /text information/
 ```
@@ -48,7 +48,7 @@ three we've explored & confirmed capable, are
 for a detailed explanation of **ion**: invoked object notation, visit
 its [**📚 documentation**](https://github.com/ionify/about/blob/public/ions/ion.md#form).
 
-for applications of **ion** & **ionify** 🤲🏾 enjoy 🤲🏾 the following subsections:
+for **ion** & **ionify** applications, 🤲🏾 enjoy 🤲🏾 the following subsections:
 
 ### [domain-specific languages](https://en.wikipedia.org/wiki/Domain-specific_language)
 
@@ -65,9 +65,9 @@ phrases to actions:
     { id: 'ask.say@ions.iskitz.net'
     , is: 'an ask & say domain-specific-language interaction'
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee','team✨ionify']
-    , on: {201507283.2 : -7}
-    , to: {202212262.2 : -8}
-    , at: +3.100
+    , on: {201507283.3 : -7}
+    , to: {202501095.3 : -8}
+    , at: +3.101
     , in: 'silicon-valley.california.usa.earth'
     , do: 'webi interaction'
     , as: 'sensation'
@@ -94,10 +94,11 @@ phrases to actions:
                 prep.with.my.answer )// 👈🏾 with
       }
 }
-
-
+```
+```javascript
 ~ /ask.say interactions can be independent ions/
-
+```
+```javascript
 ~ { say: '👋🏾 hi!'                              }
 ~ { ask: "what's your name?"                   }
 ~ { say: "hi [answer]! i'm math e. bot 🤓"     }
@@ -120,8 +121,8 @@ relationships, in whatever order is best for human comprehension -
     { id: 'frendlee@ionified.net'
     , is: 'a literate & natural-language exploration'
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee','team✨ionify']
-    , on: {201712086.2 : -8}
-    , to: {202212262.2 : -8}
+    , on: {201712086.3 : -8}
+    , to: {202501095.3 : -8}
     , in: 'silicon-valley.california.usa.earth'
     , do: 'ask.say.3@ions.iskitz.net'
     , as: 'aesop action'
@@ -150,11 +151,11 @@ relationships, in whatever order is best for human comprehension -
 ~
 { re:
     { id: 'code-as-prose.demo@ionified.net'
-    , is: 'code-as-prose with ionify & orion'
+    , is: 'code-as-prose with ionify & orion captions'
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee','team✨ionify']
-    , on: {201903237.2 : -7       }
-    , to: {578310011.1 : -8.235423}
-    , at: +0.200
+    , on: {201903237.3 : -7       }
+    , to: {578410085.0 : -8.024442}
+    , at: +0.201
     , in: 'silicon-valley.california.us.earth'
     , do: 'transcription'
     , as: 'sion sensation'
@@ -166,7 +167,8 @@ relationships, in whatever order is best for human comprehension -
     + {log: ion.say}
     }
 }
-
+```
+```javascript
     you     = {say:'do you see all the things'}
     can     = {say:'we can do'   }
   write     = {say:'if we write' }
@@ -177,7 +179,7 @@ relationships, in whatever order is best for human comprehension -
     via     = {say:'natural ❦ language by 🙇🏾‍♂️ יהוה 🤲🏾 via'}
     ion     = {say:'⚛️ invoked object notation'},
     ionify  = {say:'🧬 ions implemented for your'},
-  orion     = {say:'✨ object-reference ion:'},
+  orion     = {say:'💫 object-reference ion:'},
 captions    = {say:'📝 code-as-prose terminology ions!👨🏾‍💻'}
 
  'with' , ion + ionify & orion, you -can-
@@ -204,8 +206,8 @@ necessary to execute only one aspect of the desired functionality - **wikipedia*
     { id: 'an.ionified.module@doma.in'
     , is: 'modeling an ionified module'
     , by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee','team✨ionify']
-    , on: {200709.2    : -4     }
-    , to: {202212251.2 : -8.2337}
+    , on: {200709.3    : -4     }
+    , to: {202501095.3 : -8.0236}
     , do: 'on.storie@ionify'
     , as: 'sion action'
     },
@@ -229,8 +231,8 @@ such as user actions ..., sensor outputs, or messages from other programs or thr
 ~
 { re:
     { by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee','team✨ionify']
-    , on: {200709.2    : -4     }
-    , to: {202212251.2 : -8.2224}
+    , on: {200709.3    : -4     }
+    , to: {202501095.3 : -8.0236}
     , do: 'on.storie@ionify transcription'
     , as: 'sensation'
     },
@@ -242,7 +244,8 @@ such as user actions ..., sensor outputs, or messages from other programs or thr
       { on:'event', no:this.do}
     }
 }
-
+```
+```javascript
 ~ /this event ion could be in a separate file!/
 ~ {event: 'it happened!'} <= /invokes an event/
 ```
@@ -260,8 +263,8 @@ anonymous & named objects:
 ~
 { re:
     { by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee','team✨ionify']
-    , on: {200709.2    : -4     }
-    , to: {202212236.2 : -8.1202}
+    , on: {200709.3    : -4     }
+    , to: {202501095.3 : -8.0236}
     , do: 'on.storie@ionify transcription'
     , as: 'sensation'
     },
@@ -279,9 +282,11 @@ anonymous & named objects:
       /logs "i'm a json!" 2nd/
     }
 }
-
-~ / each ion can be in a local or remote file /
-
+```
+```javascript
+~ / each ion can be one local, or remote, file/
+```
+```javascript
 ~ { hi : "i'm an ion!"}  <=  /invoke an object/
 ~ {"hi": "i'm a json!"}  <=  /invoke some json/
 ```
@@ -292,7 +297,7 @@ anonymous & named objects:
 i.e. `~/ / + [ ] & { }`, eliminate name collisions, by encapsulating their
 [identifiers](https://en.m.wikipedia.org/wiki/Identifier#In_computer_languages).
 
-**ionify** enables individually observing & inspecting, multiple identically identified
+**ionify** enables individually observing & inspecting, multiple identical & local
 **lions**. this capability enables **lions** to simultaneously coexist, within the same
 [execution context](https://262.ecma-international.org/6.0/#sec-execution-contexts),
 without overriding all, or parts, of each other:
@@ -301,8 +306,8 @@ without overriding all, or parts, of each other:
 ~
 { re:
     { by: ['🙇🏾‍♂️ יהוה 🤲🏾','mike🇬🇾👨🏾‍💻🇺🇸lee','team✨ionify']
-    , on: {200709.2    : -4     }
-    , to: {578310022.2 : -8.0007}
+    , on: {200709.3    : -4     }
+    , to: {578410085.0 : -8.0229}
     , do: 'on.storie@ionify transcription'
     , as: 'sensation'
     },
@@ -321,20 +326,23 @@ without overriding all, or parts, of each other:
           { on: ion.re.id, no: this.do }
     }
 }
-
+```
+```javascript
 ~ /these ions can be together or in separate files/
-
+```
+```javascript
 ~
 { re:
     { id: 'my.ion@doma.in'
     , by: 'a.🇬🇾👨🏾‍💻🇺🇸.developer.producing'
-    , on: -2.20091205708
-    , to: -1.578309296080333
+    , on: -3.20091205708
+    , to: -0.578410085080233
     , in: 'silicon-valley.california.usa.earth'
     , is: "sharing the intended module's id"
     }
 }
-
+```
+```javascript
 ~
 { re:
     { id: 'my.ion@doma.in'
@@ -343,13 +351,14 @@ without overriding all, or parts, of each other:
     , is: 'identifying the intended module 🎉'
     }
 }
-
+```
+```javascript
 ~
 { re:
     { id: 'my.ion@doma.in'
     , by: 'a.🇬🇾👨🏾‍💻🇺🇸.developer.discovering'
-    , on: -2.20070904
-    , to: -2.20091205705
+    , on: -3.20070904
+    , to: -3.20091205705
     , in: 'queens-county.new-york.usa.earth'
     , is: "also sharing the intended module's id"
     }
